@@ -1,0 +1,18 @@
+.container-large {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.navbar-container {
+  height: 100%;
+  padding: 0;
+}
+
+.nav-menu-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  width: 100%;
+}
