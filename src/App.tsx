@@ -1,18 +1,9 @@
-import DropDown from './components/Dropdown'
-import DesktopNav from './components/NavBar/DesktopNav'
+import Nav from './components/Nav'
 
 function App() {
   return (
     <div>
-      <DesktopNav />
-
-      {/* <nav>
-        <div className='large-container'>
-          non intere
-          <DropDown comp={<div className='beep'>test</div>} />
-          <DropDown comp={<div>Second test</div>} />
-        </div>
-      </nav> */}
+      <Nav />
     </div>
 
   )

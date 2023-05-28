@@ -1,0 +1,26 @@
+.nav-wrapper {
+  width: 100%;
+}
+
+.brand-margin {
+  margin-right: 4rem;
+}
+
+nav {
+  ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+  }
+
+  li {
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}
+
+//drop-shadow

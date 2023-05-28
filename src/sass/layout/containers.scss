@@ -5,14 +5,8 @@
   padding: 0 40px;
 }
 
-.navbar-container {
-  height: 100%;
-  padding: 0;
-}
-
-.nav-menu-container {
+.justify-between {
   display: flex;
   justify-content: space-between;
-  min-height: 70px;
-  width: 100%;
+  align-items: center;
 }

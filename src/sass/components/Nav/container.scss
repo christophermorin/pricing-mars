@@ -1,0 +1,14 @@
+.nav-container {
+  position: fixed;
+  min-width: 100%;
+  min-height: 70px;
+}
+
+.nav-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 70px;
+  padding: 0 64px;
+}

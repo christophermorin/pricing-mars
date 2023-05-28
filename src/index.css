@@ -1,58 +1,135 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
-.container-large {
-  width: 100%;
-  max-width: 1360px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.navbar-container {
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-.nav-menu-container {
-  display: flex;
-  justify-content: space-between;
-  min-height: 70px;
-  width: 100%;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-.navbar-desktop {
-  width: 100%;
-  min-height: 70px;
-  position: fixed;
-  border: 1px solid red;
+body {
+  line-height: 1;
 }
 
-.nav-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-brand {
-  margin-right: 2rem;
-}
-
-.list-styles {
-  display: flex;
+ol,
+ul {
   list-style: none;
-  gap: 1rem;
 }
 
-.wee {
-  color: rgb(226, 222, 215);
+blockquote,
+q {
+  quotes: none;
 }
 
-.wee:hover {
-  color: rgb(255, 0, 0);
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
@@ -61,6 +138,202 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
+}
+
+.container-large {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  position: fixed;
+  min-width: 100%;
+  min-height: 70px;
+}
+
+.nav-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 70px;
+  padding: 0 64px;
+}
+
+.nav-wrapper {
+  width: 100%;
+}
+
+.brand-margin {
+  margin-right: 4rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+nav li {
+  color: black;
+  cursor: pointer;
+}
+nav li:hover {
+  color: grey;
+}
+
+.dropdown-container {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  min-height: 200px;
+}
+
+.dropdown-inner-container {
+  display: grid;
+  width: 100%;
+  padding: 20px 64px;
+}
+
+.dd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  list-style: none;
+}
+
+.dd-headers {
+  padding: 20px 0;
+}
+
+.border-r {
+  border: 1px solid red;
+}
+
+.border-b {
+  border: 1px solid blue;
+}
+
+.border-g {
+  border: 1px solid green;
+}
+
+.border-o {
+  border: 1px solid orange;
+}
+
+.col-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.col-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.col-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.col-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.col-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.col-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.col-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+.text-2 {
+  font-size: 2rem;
+}
+
+.text-3 {
+  font-size: 3rem;
+}
+
+.text-4 {
+  font-size: 4rem;
+}
+
+.text-5 {
+  font-size: 5rem;
+}
+
+.w-1 {
+  width: 10%;
+}
+
+.w-2 {
+  width: 20%;
+}
+
+.w-3 {
+  width: 30%;
+}
+
+.w-4 {
+  width: 40%;
+}
+
+.w-5 {
+  width: 50%;
+}
+
+.w-6 {
+  width: 60%;
+}
+
+.w-7 {
+  width: 70%;
+}
+
+.w-8 {
+  width: 80%;
+}
+
+.w-9 {
+  width: 90%;
+}
+
+.w-10 {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

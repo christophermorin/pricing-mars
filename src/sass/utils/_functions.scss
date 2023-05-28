@@ -1,0 +1,17 @@
+@for $i from 1 to 12 {
+  .col-#{$i} {
+    grid-template-columns: repeat($i, 1fr);
+  }
+}
+
+@for $j from 1 to 6 {
+  .text-#{$j} {
+    font-size: 1rem * $j
+  }
+}
+
+@for $k from 1 to 11 {
+  .w-#{$k} {
+    width: calc(100%/10) * $k
+  }
+}

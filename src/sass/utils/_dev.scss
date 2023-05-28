@@ -1,0 +1,13 @@
+$colors: (
+  r: red,
+  b: blue,
+  g: green,
+  o: orange
+);
+
+@each $key,
+$color in $colors {
+  .border-#{$key} {
+    border: 1px solid $color;
+  }
+}
