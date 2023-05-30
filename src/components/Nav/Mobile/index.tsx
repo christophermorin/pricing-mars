@@ -5,12 +5,12 @@ export default function Mobile() {
 
   return (
     <div className="menu">
-      <div className="menu-container">
+      <nav className="menu-container">
         <ul className="menu-ul">
           <ProductAcc />
           <ServicesAcc />
         </ul>
-      </div>
+      </nav>
     </div>
   )
 }

@@ -9,7 +9,7 @@ export default function Desktop({ handleActive }: Props) {
       <div className="justify-between">
         {/* Container splitting Links/Signup */}
         <nav className="desk-nav">
-          <ul >
+          <ul>
             <li onMouseOver={() => { handleActive(1) }} tabIndex={1}>
               Product
             </li>
@@ -23,7 +23,7 @@ export default function Desktop({ handleActive }: Props) {
             Login
           </div>
           <div className="btn-primary">
-            SignUp
+            Sign Up
           </div>
         </div>
       </div>

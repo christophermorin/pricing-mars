@@ -8,12 +8,8 @@ import Mobile from "./Mobile"
 import Hamburger from "./Mobile/Hamburger"
 
 
-export default function Nav() {
+export default function Nav({ navBreakPoint }: { navBreakPoint: boolean }) {
   const [active, setActive] = useState<number | null>(null)
-
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 730px)'
-  })
 
   const handleActive = (index: number | null) => {
     setActive(index)
@@ -23,12 +19,12 @@ export default function Nav() {
   return (
     <div className="nav-container">
       <div className="container-large">
-        <div className={`nav-inner-container ${isDesktopOrLaptop ? 'nav-border' : ''}`}>
+        <div className={`nav-inner-container ${navBreakPoint ? 'nav-border' : ''}`}>
           {/* Container splitting brand/link */}
           <div className="brand-margin">
             <img className="brand-img" src="./rock.svg" alt="Get Your Rocks" />
           </div>
-          {isDesktopOrLaptop ?
+          {navBreakPoint ?
             <Desktop handleActive={handleActive} />
             :
             <div>
