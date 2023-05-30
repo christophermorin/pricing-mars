@@ -2,8 +2,9 @@ import Nav from './components/Nav'
 
 function App() {
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <Nav />
+
     </div>
 
   )

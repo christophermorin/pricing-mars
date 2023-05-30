@@ -1,4 +1,206 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+.border-r {
+  border: 1px solid red;
+}
+
+.border-b {
+  border: 1px solid blue;
+}
+
+.border-g {
+  border: 1px solid green;
+}
+
+.border-o {
+  border: 1px solid orange;
+}
+
+.col-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.col-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.col-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.col-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.col-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.col-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.col-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+.text-2 {
+  font-size: 2rem;
+}
+
+.text-3 {
+  font-size: 3rem;
+}
+
+.text-4 {
+  font-size: 4rem;
+}
+
+.text-5 {
+  font-size: 5rem;
+}
+
+.w-1 {
+  width: 10%;
+}
+
+.w-2 {
+  width: 20%;
+}
+
+.w-3 {
+  width: 30%;
+}
+
+.w-4 {
+  width: 40%;
+}
+
+.w-5 {
+  width: 50%;
+}
+
+.w-6 {
+  width: 60%;
+}
+
+.w-7 {
+  width: 70%;
+}
+
+.w-8 {
+  width: 80%;
+}
+
+.w-9 {
+  width: 90%;
+}
+
+.w-10 {
+  width: 100%;
+}
+
+/*CodePen Home Hamburger Dropdown Menu (Pure CSS) 
+@ngochuynh
+*/
+.hamburger1 {
+  height: 45px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: rgb(61, 61, 61);
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 80vh;
+}
+
+.menu1 {
+  width: 100%;
+  background-color: #02173F;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 25px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: grey;
+}
+
+/*
+*****************************************************
+ RESET BEGINS
+*****************************************************
+
+ http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -132,6 +334,11 @@ table {
   border-spacing: 0;
 }
 
+/*
+*****************************************************
+ RESET ENDS
+*****************************************************
+*/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -141,16 +348,9 @@ body {
 }
 
 .container-large {
-  width: 100%;
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
-}
-
-.justify-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-container {
@@ -165,10 +365,12 @@ body {
   align-items: center;
   position: relative;
   min-height: 70px;
-  padding: 0 64px;
 }
 
 .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -182,11 +384,11 @@ nav ul {
   list-style: none;
 }
 nav li {
-  color: black;
+  color: grey;
   cursor: pointer;
 }
 nav li:hover {
-  color: grey;
+  color: red;
 }
 
 .dropdown-container {
@@ -201,139 +403,26 @@ nav li:hover {
 .dropdown-inner-container {
   display: grid;
   width: 100%;
-  padding: 20px 64px;
+  padding: 20px 0;
 }
 
-.dd-list {
+.dd-ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
   height: 100%;
   list-style: none;
 }
+.dd-ul li {
+  width: 75%;
+  color: grey;
+}
+.dd-ul li:hover {
+  color: red;
+}
 
 .dd-headers {
   padding: 20px 0;
-}
-
-.border-r {
-  border: 1px solid red;
-}
-
-.border-b {
-  border: 1px solid blue;
-}
-
-.border-g {
-  border: 1px solid green;
-}
-
-.border-o {
-  border: 1px solid orange;
-}
-
-.col-1 {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.col-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.col-6 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.col-7 {
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.col-8 {
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.col-9 {
-  grid-template-columns: repeat(9, 1fr);
-}
-
-.col-10 {
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.col-11 {
-  grid-template-columns: repeat(11, 1fr);
-}
-
-.text-1 {
-  font-size: 1rem;
-}
-
-.text-2 {
-  font-size: 2rem;
-}
-
-.text-3 {
-  font-size: 3rem;
-}
-
-.text-4 {
-  font-size: 4rem;
-}
-
-.text-5 {
-  font-size: 5rem;
-}
-
-.w-1 {
-  width: 10%;
-}
-
-.w-2 {
-  width: 20%;
-}
-
-.w-3 {
-  width: 30%;
-}
-
-.w-4 {
-  width: 40%;
-}
-
-.w-5 {
-  width: 50%;
-}
-
-.w-6 {
-  width: 60%;
-}
-
-.w-7 {
-  width: 70%;
-}
-
-.w-8 {
-  width: 80%;
-}
-
-.w-9 {
-  width: 90%;
-}
-
-.w-10 {
-  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

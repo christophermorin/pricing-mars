@@ -1,0 +1,37 @@
+@use '../utils/variables' as *;
+
+.dropdown-container {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  min-height: 200px;
+}
+
+.dropdown-inner-container {
+  display: grid;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.dd-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  list-style: none;
+
+  li {
+    width: 75%;
+    color: $link-primary;
+  }
+
+  li:hover {
+    color: $link-hover
+  }
+}
+
+.dd-headers {
+  padding: 20px 0;
+}
