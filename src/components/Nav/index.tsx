@@ -1,18 +1,18 @@
 import { useState } from "react"
 import { useMediaQuery } from 'react-responsive'
 
-import Products from "./Dropdowns/Product"
-import Services from "./Dropdowns/Services"
+import Products from "./Desktop/Dropdowns/Product"
+import Services from "./Desktop/Dropdowns/Services"
 import Desktop from "./Desktop"
 import Mobile from "./Mobile"
+import Hamburger from "./Mobile/Hamburger"
 
 
 export default function Nav() {
   const [active, setActive] = useState<number | null>(null)
-  const [menu, setMenu] = useState<boolean>(false)
 
   const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 630px)'
+    query: '(min-width: 730px)'
   })
 
   const handleActive = (index: number | null) => {
@@ -20,39 +20,26 @@ export default function Nav() {
     return
   }
 
-  const showMobile = () => {
-    setMenu(!menu)
-  }
-
   return (
     <div className="nav-container">
       <div className="container-large">
-        <div className="nav-inner-container" style={{ borderBottom: "1px solid black" }}>
+        <div className={`nav-inner-container ${isDesktopOrLaptop ? 'nav-border' : ''}`}>
           {/* Container splitting brand/link */}
           <div className="brand-margin">
-            Brand
+            <img className="brand-img" src="./rock.svg" alt="Get Your Rocks" />
           </div>
           {isDesktopOrLaptop ?
             <Desktop handleActive={handleActive} />
             :
             <div>
-              <input id="toggle1" type="checkbox" />
-              <label className="hamburger1" htmlFor="toggle1">
-                <div className="top"></div>
-                <div className="meat"></div>
-                <div className="bottom"></div>
-              </label>
+              <Hamburger />
               <Mobile />
             </div>}
         </div>
-
         <div>
           {active === 1 && <Products handleActive={handleActive} />}
           {active === 2 && <Services handleActive={handleActive} />}
         </div>
-
-
-
       </div>
     </div>
   )

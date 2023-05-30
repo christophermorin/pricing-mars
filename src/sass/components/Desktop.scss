@@ -1,0 +1,21 @@
+@use '../utils/variables' as *;
+
+.desk-nav {
+  ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+  }
+
+  li {
+    color: $link-primary;
+    cursor: pointer;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+
+// Needs sign in\sign out styles

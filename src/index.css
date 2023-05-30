@@ -1,201 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
-.border-r {
-  border: 1px solid red;
-}
-
-.border-b {
-  border: 1px solid blue;
-}
-
-.border-g {
-  border: 1px solid green;
-}
-
-.border-o {
-  border: 1px solid orange;
-}
-
-.col-1 {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.col-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.col-6 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.col-7 {
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.col-8 {
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.col-9 {
-  grid-template-columns: repeat(9, 1fr);
-}
-
-.col-10 {
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.col-11 {
-  grid-template-columns: repeat(11, 1fr);
-}
-
-.text-1 {
-  font-size: 1rem;
-}
-
-.text-2 {
-  font-size: 2rem;
-}
-
-.text-3 {
-  font-size: 3rem;
-}
-
-.text-4 {
-  font-size: 4rem;
-}
-
-.text-5 {
-  font-size: 5rem;
-}
-
-.w-1 {
-  width: 10%;
-}
-
-.w-2 {
-  width: 20%;
-}
-
-.w-3 {
-  width: 30%;
-}
-
-.w-4 {
-  width: 40%;
-}
-
-.w-5 {
-  width: 50%;
-}
-
-.w-6 {
-  width: 60%;
-}
-
-.w-7 {
-  width: 70%;
-}
-
-.w-8 {
-  width: 80%;
-}
-
-.w-9 {
-  width: 90%;
-}
-
-.w-10 {
-  width: 100%;
-}
-
-/*CodePen Home Hamburger Dropdown Menu (Pure CSS) 
-@ngochuynh
-*/
-.hamburger1 {
-  height: 45px;
-  margin: 10px;
-  display: -ms-grid;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
-  z-index: 120;
-}
-
-.hamburger1 div {
-  background-color: rgb(61, 61, 61);
-  position: relative;
-  width: 40px;
-  height: 5px;
-  margin-top: 7px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-#toggle1 {
-  display: none;
-}
-
-#toggle1:checked + .hamburger1 .top {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  margin-top: 22.5px;
-}
-
-#toggle1:checked + .hamburger1 .meat {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-top: -5px;
-}
-
-#toggle1:checked + .hamburger1 .bottom {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-#toggle1:checked ~ .menu1 {
-  height: 80vh;
-}
-
-.menu1 {
-  width: 100%;
-  background-color: #02173F;
-  margin: 0;
-  display: -ms-grid;
-  display: grid;
-  grid-template-rows: 1fr repeat(4, 0.5fr);
-  grid-row-gap: 25px;
-  padding: 0;
-  list-style: none;
-  clear: both;
-  width: auto;
-  text-align: center;
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.4s ease;
-  z-index: 120;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.overlay {
-  position: absolute;
-  right: 0;
-  left: 0;
-  background: grey;
-}
-
-/*
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"); /*
 *****************************************************
  RESET BEGINS
 *****************************************************
@@ -347,10 +150,108 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.border-r {
+  border: 1px solid red;
+}
+
+.border-b {
+  border: 1px solid blue;
+}
+
+.border-g {
+  border: 1px solid green;
+}
+
+.border-o {
+  border: 1px solid orange;
+}
+
+.col-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+.text-2 {
+  font-size: 2rem;
+}
+
+.text-3 {
+  font-size: 3rem;
+}
+
+.text-4 {
+  font-size: 4rem;
+}
+
+.text-5 {
+  font-size: 5rem;
+}
+
+.w-1 {
+  width: 10%;
+}
+
+.w-2 {
+  width: 20%;
+}
+
+.w-3 {
+  width: 30%;
+}
+
+.w-4 {
+  width: 40%;
+}
+
+.w-5 {
+  width: 50%;
+}
+
+.w-6 {
+  width: 60%;
+}
+
+.w-7 {
+  width: 70%;
+}
+
+.w-8 {
+  width: 80%;
+}
+
+.w-9 {
+  width: 90%;
+}
+
+.w-10 {
+  width: 100%;
+}
+
 .container-large {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-container {
@@ -363,8 +264,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   min-height: 70px;
+}
+
+.nav-border {
+  border-bottom: 1px solid black;
 }
 
 .nav-wrapper {
@@ -378,21 +282,65 @@ body {
   margin-right: 4rem;
 }
 
-nav ul {
+.brand-img {
+  width: 42x;
+  height: 42px;
+}
+
+.desk-nav ul {
   display: flex;
   gap: 25px;
   list-style: none;
 }
-nav li {
+.desk-nav li {
   color: grey;
   cursor: pointer;
 }
-nav li:hover {
+.desk-nav li:hover {
   color: red;
+}
+
+.menu-container {
+  padding: 20px 40px;
+}
+
+.menu-ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.menu-li {
+  padding: 10px 10px 5px 0px;
+  border-bottom: 1px solid black;
+}
+
+#acc1,
+#acc2 {
+  display: none;
+}
+
+#acc1:checked ~ .acc,
+#acc2:checked ~ .acc {
+  height: 400px;
+  opacity: 1;
+}
+
+.acc {
+  display: -ms-grid;
+  padding: 0;
+  height: 0px;
+  opacity: 0;
+  overflow-y: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .dropdown-container {
   display: flex;
+  background: white;
   position: absolute;
   left: 0;
   right: 0;
@@ -406,23 +354,104 @@ nav li:hover {
   padding: 20px 0;
 }
 
-.dd-ul {
+.dropdown-ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
   height: 100%;
   list-style: none;
 }
-.dd-ul li {
+.dropdown-ul li {
   width: 75%;
   color: grey;
+  cursor: pointer;
 }
-.dd-ul li:hover {
+.dropdown-ul li:hover {
   color: red;
 }
 
-.dd-headers {
+.dropdown-headers {
   padding: 20px 0;
+}
+
+.btn-secondary, .btn-primary {
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: grey;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn-secondary:hover, .btn-primary:hover {
+  background: darkgrey;
+}
+
+.btn-secondary {
+  background: rgba(0, 0, 0, 0.1);
+}
+.btn-secondary:hover {
+  background: green;
+}
+
+/*CodePen Home Hamburger Dropdown Menu (Pure CSS) 
+@ngochuynh
+*/
+.hamburger {
+  height: 44px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 120;
+}
+
+.hamburger div {
+  background-color: rgb(61, 61, 61);
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggleMenu {
+  display: none;
+}
+
+#toggleMenu:checked + .hamburger .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggleMenu:checked + .hamburger .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggleMenu:checked + .hamburger .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggleMenu:checked ~ .menu {
+  height: 90vh;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: white;
+  display: -ms-grid;
+  padding: 0;
+  height: 0px;
+  overflow-y: scroll;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*# sourceMappingURL=index.css.map */
