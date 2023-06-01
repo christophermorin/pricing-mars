@@ -258,6 +258,7 @@ body {
   position: fixed;
   min-width: 100%;
   min-height: 70px;
+  z-index: 910;
 }
 
 .nav-inner-container {
@@ -285,6 +286,37 @@ body {
 .brand-img {
   width: 42x;
   height: 42px;
+}
+
+.main {
+  padding-top: 150px;
+}
+.main h1 {
+  text-align: center;
+}
+.main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  min-height: 900px;
+}
+@media (min-width: 730px) {
+  .main section {
+    flex-direction: row;
+  }
+}
+.main section :nth-child(1),
+.main section :nth-child(3) {
+  align-self: center;
+}
+@media (min-width: 730px) {
+  .main section :nth-child(1),
+  .main section :nth-child(3) {
+    align-self: flex-end;
+  }
 }
 
 .desk-nav ul {
@@ -390,6 +422,55 @@ body {
 }
 .btn-secondary:hover {
   background: green;
+}
+
+.text-right, .text-left {
+  flex: 1;
+  position: relative;
+}
+
+.btn-slider {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  background: grey;
+}
+
+.slider-bg {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 30px;
+  padding: 6px 0;
+  border-radius: 30px 0 0 30px;
+  background: red;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider-bg.right {
+  width: 140px;
+  border-radius: 0 30px 30px 0px;
+  transform: translate3d(95px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.slider-bg.left {
+  transform: translate3d(5px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.text-right {
+  text-align: end;
+}
+
+.card {
+  min-width: 320px;
+  height: 800px;
+  border: 1px solid red;
 }
 
 /*CodePen Home Hamburger Dropdown Menu (Pure CSS) 

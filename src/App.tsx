@@ -1,4 +1,5 @@
 import Nav from './components/Nav'
+import Main from './components/Main'
 import { useMediaQuery } from 'react-responsive'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <div >
       <Nav navBreakPoint={navBreakPoint} />
+      <Main />
     </div>
   )
 }

@@ -1,0 +1,30 @@
+.main {
+  padding-top: 150px;
+
+  h1 {
+    text-align: center;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    min-height: 900px;
+
+    @media (min-width: 730px) {
+      flex-direction: row;
+    }
+  }
+
+  section :nth-child(1),
+  section :nth-child(3) {
+    align-self: center;
+
+    @media (min-width: 730px) {
+      align-self: flex-end;
+    }
+  }
+}

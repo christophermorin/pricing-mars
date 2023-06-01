@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { useMediaQuery } from 'react-responsive'
 
 import Products from "./Desktop/Dropdowns/Product"
 import Services from "./Desktop/Dropdowns/Services"
