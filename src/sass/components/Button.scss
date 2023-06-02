@@ -1,4 +1,7 @@
 %btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 16px;
   border-radius: 20px;
   background: grey;
@@ -21,4 +24,12 @@
   &:hover {
     background: green;
   }
+}
+
+.btn-card {
+  @extend %btn;
+  width: 120px;
+  height: 30px;
+  padding: 6px 15px;
+  align-self: flex-end;
 }

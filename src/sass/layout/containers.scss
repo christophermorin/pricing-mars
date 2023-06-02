@@ -1,8 +1,17 @@
 .container-large {
-  // width: 100%;
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.container-medium {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: 730px) {
+    padding: 0 40px;
+  }
 }
 
 .justify-between {
