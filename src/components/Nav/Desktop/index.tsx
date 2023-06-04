@@ -6,9 +6,9 @@ export default function Desktop({ handleActive }: Props) {
   return (
     <div className="w-10">
       {/* Container holding links/signup */}
-      <div className="justify-between">
+      <div className="pos-justify-between">
         {/* Container splitting Links/Signup */}
-        <nav className="desk-nav">
+        <nav className="desktop-nav">
           <ul>
             <li onMouseOver={() => { handleActive(1) }} tabIndex={1}>
               Product
@@ -18,7 +18,7 @@ export default function Desktop({ handleActive }: Props) {
             <li onMouseOver={() => { handleActive(4) }} tabIndex={4}>Contacts</li>
           </ul>
         </nav>
-        <div style={{ display: 'flex', gap: '2px' }}>
+        <div className="desktop-auth">
           <div className="btn-secondary">
             Login
           </div>

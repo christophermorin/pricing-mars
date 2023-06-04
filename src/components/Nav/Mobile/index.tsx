@@ -1,5 +1,6 @@
-import ProductAcc from "./Accordians/ProductAcc"
-import ServicesAcc from "./Accordians/ServicesAcc"
+import { navData } from "../../../db/navData"
+
+import Accordian from "./Accordian"
 
 export default function Mobile() {
 
@@ -7,8 +8,11 @@ export default function Mobile() {
     <div className="menu">
       <nav className="menu-container">
         <ul className="menu-ul">
-          <ProductAcc />
-          <ServicesAcc />
+          {navData.map(data => {
+            return (
+              <Accordian key={data.catagory} data={data} />
+            )
+          })}
         </ul>
       </nav>
     </div>

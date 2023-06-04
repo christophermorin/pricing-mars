@@ -5,7 +5,7 @@ interface Props {
 
 export default function Slider({ handleSlider, sliderSelect }: Props) {
   return (
-    <div onClick={handleSlider} className="btn-slider" role="button">
+    <div onClick={handleSlider} className="btn-slider" data-testid="slider_button">
       <div
         data-testid="slider"
         className={`slider-bg ${sliderSelect ? 'right' : 'left'}`}>
@@ -14,7 +14,7 @@ export default function Slider({ handleSlider, sliderSelect }: Props) {
         Left side
       </div>
       <div className="text-right">
-        Rightuuudfgdf
+        Right Side
       </div>
     </div>
   )

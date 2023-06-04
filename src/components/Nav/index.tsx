@@ -1,7 +1,6 @@
 import { useState } from "react"
-
-import Products from "./Desktop/Dropdowns/Product"
-import Services from "./Desktop/Dropdowns/Services"
+import { navData } from "../../db/navData"
+import DropDown from "./Desktop/Dropdown"
 import Desktop from "./Desktop"
 import Mobile from "./Mobile"
 import Hamburger from "./Mobile/Hamburger"
@@ -18,10 +17,9 @@ export default function Nav({ navBreakPoint }: { navBreakPoint: boolean }) {
   return (
     <div className="nav-container">
       <div className="container-large">
-        <div className={`nav-inner-container ${navBreakPoint ? 'nav-border' : ''}`}>
-          {/* Container splitting brand/link */}
-          <div className="brand-margin">
-            <img className="brand-img" src="./rock.svg" alt="Get Your Rocks" />
+        <div className="nav-inner-container">
+          <div className="nav-brand-margin">
+            <img className="nav-brand-img" src="./rock.svg" alt="Breathe Valor" />
           </div>
           {navBreakPoint ?
             <Desktop handleActive={handleActive} />
@@ -32,8 +30,11 @@ export default function Nav({ navBreakPoint }: { navBreakPoint: boolean }) {
             </div>}
         </div>
         <div>
-          {active === 1 && <Products handleActive={handleActive} />}
-          {active === 2 && <Services handleActive={handleActive} />}
+          {navData.map(data => {
+            return (
+              active === data.id && <DropDown key={data.catagory} handleActive={handleActive} data={data} />
+            )
+          })}
         </div>
       </div>
     </div>

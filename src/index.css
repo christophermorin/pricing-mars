@@ -150,22 +150,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.border-r {
-  border: 1px solid red;
-}
-
-.border-b {
-  border: 1px solid blue;
-}
-
-.border-g {
-  border: 1px solid green;
-}
-
-.border-o {
-  border: 1px solid orange;
-}
-
 .col-1 {
   grid-template-columns: repeat(1, 1fr);
 }
@@ -251,7 +235,7 @@ body {
 .container-medium {
   max-width: 1144px;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px;
 }
 @media (min-width: 730px) {
   .container-medium {
@@ -259,10 +243,25 @@ body {
   }
 }
 
-.justify-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.col-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 340px));
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+@media (min-width: 1160px) {
+  .col-container {
+    height: 900px;
+  }
+}
+@media (min-width: 730px) {
+  .col-container {
+    gap: 20px;
+  }
+  .col-container .drop-card {
+    align-self: flex-end;
+  }
 }
 
 .nav-container {
@@ -272,6 +271,11 @@ body {
   z-index: 910;
   background: white;
 }
+@media (min-width: 730px) {
+  .nav-container {
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+  }
+}
 
 .nav-inner-container {
   display: flex;
@@ -280,63 +284,65 @@ body {
   min-height: 70px;
 }
 
-.nav-border {
-  border-bottom: 1px solid black;
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.brand-margin {
+.nav-brand-margin {
   margin-right: 4rem;
 }
 
-.brand-img {
+.nav-brand-img {
   width: 42x;
   height: 42px;
 }
 
 .main {
   padding-top: 150px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .main h1 {
   text-align: center;
 }
-
-.main-section {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(320px, 340px));
-  justify-content: center;
-  row-gap: 40px;
-  margin-top: 40px;
-  height: 900px;
-}
 @media (min-width: 730px) {
-  .main-section {
-    grid-template-columns: repeat(3, minmax(320px, 1fr));
-    column-gap: 20px;
-  }
-  .main-section .drop-card {
-    align-self: flex-end;
+  .main {
+    padding-bottom: 80px;
   }
 }
 
-.desk-nav ul {
+.addOns-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(320px, 340px));
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 20px 0 40px 0;
+}
+@media (min-width: 1020px) {
+  .addOns-container {
+    justify-content: center;
+    padding: 40px 0 80px 0;
+    overflow-x: unset;
+  }
+}
+
+.pos-justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-nav ul {
   display: flex;
   gap: 25px;
   list-style: none;
 }
-.desk-nav li {
+.desktop-nav li {
   color: grey;
   cursor: pointer;
 }
-.desk-nav li:hover {
+.desktop-nav li:hover {
   color: red;
+}
+
+.desktop-auth {
+  display: flex;
+  gap: 10px;
 }
 
 .menu-container {
@@ -385,11 +391,17 @@ body {
   right: 0;
   width: auto;
   min-height: 200px;
+  box-shadow: 0 30px 20px 7px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-inner-container {
   display: grid;
   width: 100%;
+  padding: 20px 0;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dropdown-headers {
   padding: 20px 0;
 }
 
@@ -409,8 +421,17 @@ body {
   color: red;
 }
 
-.dropdown-headers {
-  padding: 20px 0;
+.accordian-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.accordian-header {
+  padding-bottom: 10px;
 }
 
 .btn-card, .btn-secondary, .btn-primary {
@@ -436,9 +457,11 @@ body {
 
 .btn-card {
   width: 120px;
-  height: 30px;
+  height: 40px;
   padding: 6px 15px;
   align-self: flex-end;
+  outline: none;
+  border: none;
 }
 
 .text-right, .text-left {
@@ -487,11 +510,13 @@ body {
 
 .card {
   display: grid;
+  background: white;
   padding: 40px;
   max-width: 320px;
   height: 800px;
-  border: 1px solid red;
   position: relative;
+  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 }
 
 .card-top {
@@ -511,6 +536,23 @@ body {
   margin-bottom: 0;
 }
 
+.card-ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
+  gap: 20px;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+
+.card-features {
+  display: flex;
+  align-items: center;
+}
+.card-features img {
+  margin-right: 10px;
+}
+
 .card-outline {
   position: absolute;
   background: red;
@@ -518,7 +560,48 @@ body {
   height: 104%;
   top: -3%;
   left: -2%;
+  border-radius: 25px;
   z-index: -1;
+}
+
+.addOn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+  border: 0.5px solid lightgrey;
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.addOn-end {
+  text-align: end;
+}
+
+#faq1,
+#faq2,
+#faq3 {
+  display: none;
+}
+
+#faq1:checked ~ .faq,
+#faq2:checked ~ .faq,
+#faq3:checked ~ .faq {
+  height: 100px;
+  opacity: 1;
+  padding: 0 10px 10px 10px;
+}
+
+.faq {
+  display: -ms-grid;
+  padding: 0;
+  height: 0px;
+  opacity: 0;
+  overflow-y: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*CodePen Home Hamburger Dropdown Menu (Pure CSS) 

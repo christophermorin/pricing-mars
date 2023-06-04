@@ -6,13 +6,12 @@ describe('Main', () => {
     render(<Main />)
     const header = screen.getByText("Get Your Rocks")
     expect(header).toBeInTheDocument()
-    // expect(header).ToBe
   })
   it("Slider should toggle slide state on click", async () => {
     render(<Main />)
     const slider = screen.getByTestId("slider")
     expect(slider).toHaveClass("left")
-    fireEvent.click(screen.getByRole("button"))
+    fireEvent.click(screen.getByTestId("slider_button"))
     expect(slider).toHaveClass("right")
   })
   it("Cards should render with headings", async () => {

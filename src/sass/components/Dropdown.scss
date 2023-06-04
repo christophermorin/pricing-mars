@@ -8,11 +8,17 @@
   right: 0;
   width: auto;
   min-height: 200px;
+  box-shadow: 0 30px 20px 7px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-inner-container {
   display: grid;
   width: 100%;
+  padding: 20px 0;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dropdown-headers {
   padding: 20px 0;
 }
 
@@ -33,8 +39,4 @@
     }
   }
 
-}
-
-.dropdown-headers {
-  padding: 20px 0;
 }

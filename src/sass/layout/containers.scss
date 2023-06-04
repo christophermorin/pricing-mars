@@ -2,20 +2,35 @@
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+
 }
 
 .container-medium {
   max-width: 1144px;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px;
 
   @media (min-width: 730px) {
     padding: 0 40px;
   }
 }
 
-.justify-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.col-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 340px));
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+
+  @media (min-width: 1160px) {
+    height: 900px;
+  }
+
+  @media (min-width: 730px) {
+    gap: 20px;
+
+    .drop-card {
+      align-self: flex-end;
+    }
+  }
 }

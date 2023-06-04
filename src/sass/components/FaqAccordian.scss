@@ -1,0 +1,26 @@
+#faq1,
+#faq2,
+#faq3 {
+  display: none;
+}
+
+//use for loops for this
+#faq1:checked~.faq,
+#faq2:checked~.faq,
+#faq3:checked~.faq {
+  height: 100px;
+  opacity: 1;
+  padding: 0 10px 10px 10px
+}
+
+.faq {
+  display: -ms-grid;
+  padding: 0;
+  height: 0px;
+  opacity: 0;
+  overflow-y: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

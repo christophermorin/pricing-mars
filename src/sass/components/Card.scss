@@ -3,13 +3,13 @@
 
 .card {
   display: grid;
-  // flex-direction: column;
-  // justify-content: space-between;
+  background: white;
   padding: 40px;
   max-width: 320px;
   height: 800px;
-  border: 1px solid red;
   position: relative;
+  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 }
 
 .card-top {
@@ -27,6 +27,26 @@
   @include mixins.mt-auto(20px)
 }
 
+.card-ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
+  gap: 20px;
+  padding: 20px;
+  border-top: 1px solid black;
+
+}
+
+.card-features {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+  }
+
+}
+
 .card-outline {
   position: absolute;
   background: red;
@@ -34,6 +54,7 @@
   height: 104%;
   top: -3%;
   left: -2%;
-
+  border-radius: 25px;
+  // box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.2);
   z-index: -1;
 }

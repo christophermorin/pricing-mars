@@ -1,0 +1,14 @@
+.addOn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+  border: 0.5px solid lightgrey;
+  border-radius: 25px;
+  padding: 40px;
+  // box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.addOn-end {
+  text-align: end;
+}

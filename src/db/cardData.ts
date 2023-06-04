@@ -6,6 +6,17 @@ export interface CardType {
   items: string[],
 }
 
+export const cardVoid: CardType = {
+  id: 11,
+  title: "Voidless",
+  price: "Free",
+  description: "No one likes void in space",
+  items: [
+    "We got jokes",
+    "And such things",
+  ]
+}
+
 
 const cardData: CardType[] = [
   {

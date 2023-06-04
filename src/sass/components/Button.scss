@@ -29,7 +29,9 @@
 .btn-card {
   @extend %btn;
   width: 120px;
-  height: 30px;
+  height: 40px;
   padding: 6px 15px;
   align-self: flex-end;
+  outline: none;
+  border: none;
 }

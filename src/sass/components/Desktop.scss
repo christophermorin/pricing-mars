@@ -1,6 +1,6 @@
 @use '../utils/variables' as *;
 
-.desk-nav {
+.desktop-nav {
   ul {
     display: flex;
     gap: 25px;
@@ -17,5 +17,8 @@
   }
 }
 
-
 // Needs sign in\sign out styles
+.desktop-auth {
+  display: flex;
+  gap: 10px;
+}

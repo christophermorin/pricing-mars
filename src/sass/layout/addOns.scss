@@ -1,0 +1,13 @@
+.addOns-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(320px, 340px));
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 20px 0 40px 0;
+
+  @media (min-width: 1020px) {
+    justify-content: center;
+    padding: 40px 0 80px 0;
+    overflow-x: unset;
+  }
+}
