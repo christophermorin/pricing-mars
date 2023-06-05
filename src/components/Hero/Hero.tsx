@@ -12,7 +12,7 @@ export default function Main({ voidBreakPoint }: { voidBreakPoint: boolean }) {
   }
   return (
     <main className="container-medium main">
-      <h1 className="text-3">Breathe Valor</h1>
+      <h1 className="text-3">Hero Title</h1>
       <div style={{ margin: "auto", }}>
         <Slider
           handleSlider={handleSlider}
