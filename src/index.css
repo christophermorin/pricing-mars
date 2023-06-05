@@ -321,6 +321,10 @@ body {
   }
 }
 
+.addOn-header {
+  text-align: center;
+}
+
 .pos-justify-between {
   display: flex;
   justify-content: space-between;
@@ -578,6 +582,15 @@ body {
   text-align: end;
 }
 
+.faq-container {
+  width: 100%;
+}
+@media (min-width: 730px) {
+  .faq-container {
+    width: 60%;
+  }
+}
+
 #faq1,
 #faq2,
 #faq3 {
@@ -587,9 +600,15 @@ body {
 #faq1:checked ~ .faq,
 #faq2:checked ~ .faq,
 #faq3:checked ~ .faq {
-  height: 100px;
+  height: 140px;
   opacity: 1;
-  padding: 0 10px 10px 10px;
+}
+@media (min-width: 730px) {
+  #faq1:checked ~ .faq,
+  #faq2:checked ~ .faq,
+  #faq3:checked ~ .faq {
+    height: 90px;
+  }
 }
 
 .faq {
@@ -602,6 +621,23 @@ body {
   z-index: 120;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.faq-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.faq-chevron {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.faq-chevron-open {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
 }
 
 /*CodePen Home Hamburger Dropdown Menu (Pure CSS) 

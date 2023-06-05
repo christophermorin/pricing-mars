@@ -22,7 +22,7 @@ function App() {
       <Main voidBreakPoint={voidBreakPoint} />
       <section className='container-medium'>
         {/* Add on section */}
-        <h2 className='text-2' style={{ textAlign: "center" }}>Addons Header</h2>
+        <h2 className='text-2 addOn-header'>Addons Header</h2>
         <div className=' addOns-container'>
           {/* TODO:Add to db and map to populate cards instead */}
           <AddOnCard />
@@ -35,7 +35,7 @@ function App() {
         {/* Faq section */}
         <div className='container-medium' style={{ border: "1px solid blue", height: "100%" }}>
           <h2 className='text-2'>Frequently Asked Questions</h2>
-          <section style={{ width: "40%" }}>
+          <section className='faq-container'>
             {[1, 2, 3].map(faq => {
               return (
                 <FaqAccordian id={faq} />
