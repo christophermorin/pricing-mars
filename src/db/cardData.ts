@@ -23,55 +23,22 @@ const cardData: CardType[] = [
     id: 0,
     title: "Pebbles",
     price: "17",
-    description: "I dont know, its a bag of pebbles",
-    items: [
-      "gems",
-      "stones",
-      "bobs pebble",
-      "the jewels",
-      "a green one",
-      "less than a rock",
-      "what what",
-      "three pebbles",
-      "a dirty rock",
-      "one worm",
-    ]
+    description: "Consectetur Eiusmod Adipiscing",
+    items: ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur", "Adipiscing", "Elit", "Sed", "Eiusmod"]
   },
   {
     id: 1,
     title: "Mountain",
     price: "17",
-    description: "I dont know, its a bag of pebbles",
-    items: [
-      "gems",
-      "stones",
-      "bobs pebble",
-      "the jewels",
-      "a green one",
-      "less than a rock",
-      "what what",
-      "three pebbles",
-      "a dirty rock",
-      "one worm",
-    ]
+    description: "Ut, Nostrud Exercitation",
+    items: ["Ut", "Enim", "Ad", "Minim", "Veniam", "Quis", "Nostrud", "Exercitation", "Ullamco", "Laboris"]
   },
   {
     id: 2,
     title: "Boulder",
     price: "17",
-    description: "I dont know, its a bag of pebbles",
-    items: [
-      "gems",
-      "stones",
-      "bobs pebble",
-      "the jewels",
-      "a green one",
-      "less than a rock",
-      "what what",
-      "three pebbles",
-      "a dirty rock",
-      "one worm",
-    ]
+    description: "Aliquip, Commodo Cupidatat",
+    items: ["Aliquip", "Commodo", "Cupidatat", "Non", "Proident", "Sunt", "In", "Culpa", "Qui", "Officia"]
   }
 ]
 
