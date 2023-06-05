@@ -1,6 +1,6 @@
 import { navData } from "../../../db/navData"
 
-import Accordian from "./Accordian"
+import Accordian from "./Accordian/Accordian"
 
 export default function Mobile() {
 

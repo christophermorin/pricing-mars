@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import Card from '../components/Cards';
+import Card from '../components/Cards/Cards';
 import cardData from '../db/cardData';
 
 describe('Card', () => {

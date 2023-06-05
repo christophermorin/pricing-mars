@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import Main from '../components/Main';
+import Main from '../components/Hero/Hero';
 
 describe('Main', () => {
   it('Main header displays', () => {

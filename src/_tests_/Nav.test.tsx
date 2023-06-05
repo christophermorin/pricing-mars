@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Nav from '../components/Nav';
+import Nav from '../components/Nav/Nav';
 
 describe('desktop nav', () => {
   it('renders desktop nav', () => {

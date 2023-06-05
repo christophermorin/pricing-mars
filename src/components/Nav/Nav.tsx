@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { navData } from "../../db/navData"
-import DropDown from "./Desktop/Dropdown"
-import Desktop from "./Desktop"
-import Mobile from "./Mobile"
+import DropDown from "./Desktop/Dropdown/DropDown"
+import Desktop from "./Desktop/Desktop"
+import Mobile from "./Mobile/Mobile"
 import Hamburger from "./Mobile/Hamburger"
 
 

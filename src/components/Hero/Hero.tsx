@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Slider from "../Buttons/Slider"
-import Card from "../Cards"
+import Card from "../Cards/Cards"
 import cardData from "../../db/cardData"
 import { cardVoid } from "../../db/cardData"
 

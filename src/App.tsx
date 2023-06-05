@@ -1,6 +1,6 @@
-import Nav from './components/Nav'
-import Main from './components/Main'
-import AddOnCard from './components/AddOnCard'
+import Nav from './components/Nav/Nav'
+import Main from './components/Hero/Hero'
+import AddOnCard from './components/AddOnCard/AddOnCard'
 
 import FaqAccordian from './components/Faq/FaqAccordian'
 import { useMediaQuery } from 'react-responsive'
