@@ -1,0 +1,16 @@
+.faq-img {
+  display: none;
+
+  @media (min-width: 730px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -200px;
+
+  }
+
+  // background-image: url("/public/boulder-dash.svg");
+  // background-size: cover;
+  // background-position: 0% -100%;
+  // background-repeat: no-repeat;
+}

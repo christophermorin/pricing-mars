@@ -1,5 +1,9 @@
-.faq-container {
+.faq-accordians-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
+
 
   @media (min-width: 730px) {
     width: 60%;

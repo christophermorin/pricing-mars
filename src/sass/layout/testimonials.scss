@@ -1,0 +1,30 @@
+// Can create this seperate for both addons and testimonials
+.overflow {
+  overflow-x: scroll;
+
+  @media (min-width: "730px") {
+    overflow-x: unset
+  }
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  @media (min-width: 730px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.quotes-row {
+  display: flex;
+  gap: 20px;
+  // justify-content: flex-start;
+
+  // @media (min-width: 730px) {
+  //   justify-content: center;
+  // }
+}
