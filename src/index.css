@@ -295,15 +295,10 @@ body {
 
 .main {
   padding-top: 150px;
-  padding-bottom: 40px;
+  padding-bottom: 120px;
 }
 .main h1 {
   text-align: center;
-}
-@media (min-width: 730px) {
-  .main {
-    padding-bottom: 80px;
-  }
 }
 
 .addOns-container {
@@ -331,6 +326,16 @@ body {
   align-items: center;
 }
 
+.faq-h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media (min-width: 730px) {
+  .faq-h2 {
+    text-align: start;
+  }
+}
+
 .faq-img {
   display: none;
 }
@@ -339,7 +344,7 @@ body {
     display: block;
     position: absolute;
     right: 0;
-    top: -200px;
+    top: -150px;
   }
 }
 
@@ -642,34 +647,26 @@ body {
 #faq1:checked ~ .faq,
 #faq2:checked ~ .faq,
 #faq3:checked ~ .faq {
-  height: 140px;
-  opacity: 1;
-}
-@media (min-width: 730px) {
-  #faq1:checked ~ .faq,
-  #faq2:checked ~ .faq,
-  #faq3:checked ~ .faq {
-    height: 90px;
-  }
+  max-height: 200px;
+  transition: max-height 0.3s ease-in;
 }
 
 .faq {
   display: -ms-grid;
-  padding: 0;
-  height: 0px;
-  opacity: 0;
+  padding-bottom: 0px;
+  max-height: 0;
   overflow-y: hidden;
-  transition: height 0.4s ease;
+  transition: max-height 0.3s ease-out;
   z-index: 120;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .faq-ul {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
+  padding-bottom: 10px;
 }
 
 .faq-chevron {

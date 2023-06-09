@@ -1,14 +1,14 @@
 .main {
   padding-top: 150px;
-  padding-bottom: 40px;
+  padding-bottom: 120px;
 
   h1 {
     text-align: center;
   }
 
-  @media (min-width: 730px) {
-    padding-bottom: 80px;
-  }
+  // @media (min-width: 730px) {
+  //   padding-bottom: 120px;
+  // }
 }
 
 // .main-section {
