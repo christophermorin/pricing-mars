@@ -1,5 +1,5 @@
 @use '../utils/mixins';
-
+@use '../utils/variables' as *;
 
 .card {
   display: grid;
@@ -49,7 +49,7 @@
 
 .card-outline {
   position: absolute;
-  background: red;
+  background: #FA2742;
   width: 104%;
   height: 104%;
   top: -3%;

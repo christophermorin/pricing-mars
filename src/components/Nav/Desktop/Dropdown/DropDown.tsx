@@ -13,7 +13,7 @@ export default function DropDown({ handleActive, data }: Props) {
         {data.headers.map((header, i) => {
           return (
             <div>
-              <h3 className="dropdown-headers">{header}</h3>
+              <p className="dropdown-headers">{header}</p>
               <ul className="dropdown-ul">
                 {data.items[i].map((item, j) => {
                   return (

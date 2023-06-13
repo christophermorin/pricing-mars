@@ -103,6 +103,10 @@
   }
 }
 
+.contact-card-container {
+  width: 100%;
+  padding: 0 20px;
+}
 
 .contact-card {
   margin-top: 20px;
@@ -111,4 +115,22 @@
   p {
     margin: 20px 0;
   }
+}
+
+.divider {
+  border: 1px solid grey;
+  padding: 0 20px;
+}
+
+.banner-container {
+  margin-top: 120px;
+  background: lightblue;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+
 }

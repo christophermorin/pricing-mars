@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div style={{ height: "400px" }}>
+    <div style={{ height: "400px", paddingTop: "120px" }}>
       <footer className="container-large" style={{ height: "100%" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", borderBottom: "1px solid grey", height: "100%" }}>
           <ul style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>

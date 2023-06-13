@@ -8,11 +8,12 @@
   }
 
   li {
-    color: $link-primary;
+    color: $text-primary;
     cursor: pointer;
+    font-weight: 700;
 
     &:hover {
-      color: $link-hover;
+      color: $primary-color;
     }
   }
 }

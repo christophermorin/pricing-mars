@@ -10,11 +10,11 @@ export default function Slider({ handleSlider, sliderSelect }: Props) {
         data-testid="slider"
         className={`slider-bg ${sliderSelect ? 'right' : 'left'}`}>
       </div>
-      <div className="text-left">
-        Left side
+      <div className={`text-left ${sliderSelect ? '' : 'text-active'}`} >
+        Monthly
       </div>
-      <div className="text-right">
-        Right Side
+      <div className={`text-right ${sliderSelect ? 'text-active' : ''}`}>
+        Yearly
       </div>
     </div>
   )

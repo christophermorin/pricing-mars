@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"); /*
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+/*
 *****************************************************
  RESET BEGINS
 *****************************************************
@@ -142,22 +143,30 @@ table {
  RESET ENDS
 *****************************************************
 */
+:root {
+  --default-color: #000;
+  --primary-color: #3FD2C7;
+  --secondary-color: rgba(173, 216, 230, 1);
+  --text-primary: #00458B;
+  --text-primary-hover: red;
+}
+
+.theme-dark {
+  --primary-color: green;
+  --secondary-color: purple;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
+  color: var(--text-primary);
 }
 
-:root {
-  --primary-text: rgba(255, 0, 0, 1);
-  --secondary-text: blue;
-}
-
-.theme-dark {
-  --primary-text: green;
-  --secondary-text: purple;
+li {
+  color: black;
 }
 
 .col-1 {
@@ -258,7 +267,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 340px));
   justify-content: center;
   gap: 40px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 @media (min-width: 1160px) {
   .col-container {
@@ -499,6 +508,11 @@ body {
   }
 }
 
+.contact-card-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
 .contact-card {
   margin-top: 20px;
   width: 80%;
@@ -507,17 +521,35 @@ body {
   margin: 20px 0;
 }
 
+.divider {
+  border: 1px solid grey;
+  padding: 0 20px;
+}
+
+.banner-container {
+  margin-top: 120px;
+  background: lightblue;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+}
+
 .desktop-nav ul {
   display: flex;
   gap: 25px;
   list-style: none;
 }
 .desktop-nav li {
-  color: grey;
+  color: var(--text-primary);
   cursor: pointer;
+  font-weight: 700;
 }
 .desktop-nav li:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .desktop-auth {
@@ -582,6 +614,7 @@ body {
 }
 
 .dropdown-headers {
+  font-weight: 600;
   padding: 20px 0;
 }
 
@@ -594,11 +627,11 @@ body {
 }
 .dropdown-ul li {
   width: 75%;
-  color: grey;
+  color: black;
   cursor: pointer;
 }
 .dropdown-ul li:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .accordian-ul {
@@ -619,20 +652,27 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px 16px;
+  font-weight: 700;
   border-radius: 20px;
-  background: grey;
-  transition: background 0.2s ease-in-out;
+  background: var(--primary-color);
+  color: var(--default-color);
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 .btn-card:hover, .btn-secondary:hover, .btn-primary:hover {
-  background: darkgrey;
+  background: var(--text-primary);
+  color: var(--default-color);
+  filter: drop-shadow(1px 1px 5px var(--primary-color));
 }
 
 .btn-secondary {
-  background: rgba(0, 0, 0, 0.1);
+  background: inherit;
+  border: none;
+  color: var(--text-primary);
 }
 .btn-secondary:hover {
-  background: green;
+  color: var(--text-primary);
+  background: none;
 }
 
 .btn-card {
@@ -647,6 +687,9 @@ body {
 .text-right, .text-left {
   flex: 1;
   position: relative;
+  color: var(--text-primary);
+  transition: all 0.3s;
+  font-weight: 700;
 }
 
 .btn-slider {
@@ -658,8 +701,8 @@ body {
   height: 30px;
   border-radius: 30px;
   padding: 10px 20px;
-  margin: 20px auto;
-  background: grey;
+  margin: 40px auto;
+  background: rgb(173, 216, 230);
   cursor: pointer;
 }
 
@@ -667,25 +710,31 @@ body {
   position: absolute;
   left: 0;
   width: 110px;
-  height: 30px;
+  height: 40px;
   padding: 6px 0;
   border-radius: 30px 0 0 30px;
-  background: red;
+  background: var(--text-primary);
   transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.4);
 }
 
 .slider-bg.right {
-  width: 120px;
+  width: 110px;
   border-radius: 0 30px 30px 0px;
-  transform: translate3d(115px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(130px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
 .slider-bg.left {
-  transform: translate3d(5px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
 .text-right {
   text-align: end;
+}
+
+.text-active {
+  color: var(--primary-color);
 }
 
 .card {
@@ -735,7 +784,7 @@ body {
 
 .card-outline {
   position: absolute;
-  background: red;
+  background: #FA2742;
   width: 104%;
   height: 104%;
   top: -3%;

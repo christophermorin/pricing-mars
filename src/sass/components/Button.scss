@@ -1,15 +1,22 @@
+@use '../utils/variables' as *;
+
 %btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 16px;
+  font-weight: 700;
   border-radius: 20px;
-  background: grey;
-  transition: background 0.2s ease-in-out;
+  // border: 2px solid $text-primary;
+  background: $primary-color;
+  color: $default-color;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 
   &:hover {
-    background: darkgrey;
+    background: $text-primary;
+    color: $default-color;
+    filter: drop-shadow(1px 1px 5px $primary-color);
   }
 }
 
@@ -19,10 +26,13 @@
 
 .btn-secondary {
   @extend %btn;
-  background: rgba(0, 0, 0, 0.1);
+  background: inherit;
+  border: none;
+  color: $text-primary;
 
   &:hover {
-    background: green;
+    color: $text-primary;
+    background: none;
   }
 }
 

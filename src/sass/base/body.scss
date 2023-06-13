@@ -1,3 +1,4 @@
+@use '../utils/variables' as *;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 body {
@@ -6,4 +7,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  color: $text-primary;
+}
+
+li {
+  color: black;
 }

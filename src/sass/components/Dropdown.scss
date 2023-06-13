@@ -19,6 +19,7 @@
 }
 
 .dropdown-headers {
+  font-weight: 600;
   padding: 20px 0;
 }
 
@@ -31,11 +32,11 @@
 
   li {
     width: 75%;
-    color: $link-primary;
+    color: black;
     cursor: pointer;
 
     &:hover {
-      color: $link-hover
+      color: $primary-color;
     }
   }
 

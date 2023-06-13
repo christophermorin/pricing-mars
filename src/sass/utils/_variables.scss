@@ -7,4 +7,8 @@ $link-hover: red;
 
 
 // create reusable variables that you will replace fontcolors, backgrounds, box shadows across all scss files here. 
-$bg-color: var(--primary-text);
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$text-primary: var(--text-primary);
+$text-primary-hover: var(--text-primary-hover);
+$default-color: var(--default-color);

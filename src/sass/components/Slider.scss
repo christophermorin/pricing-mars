@@ -1,6 +1,11 @@
+@use '../utils/variables' as *;
+
 %slider-text {
   flex: 1;
   position: relative;
+  color: $text-primary;
+  transition: all 0.3s;
+  font-weight: 700;
 }
 
 .btn-slider {
@@ -12,31 +17,33 @@
   height: 30px;
   border-radius: 30px;
   padding: 10px 20px;
-  margin: 20px auto;
-  background: grey;
+  margin: 40px auto;
+  background: rgba(173, 216, 230, 1);
   cursor: pointer;
+
 }
 
 .slider-bg {
   position: absolute;
   left: 0;
   width: 110px;
-  height: 30px;
+  height: 40px;
   padding: 6px 0;
   border-radius: 30px 0 0 30px;
-  background: red;
+  background: $text-primary;
   transition: all 0.3s ease-in-out;
-  // transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.4);
 }
 
 .slider-bg.right {
-  width: 120px;
+  width: 110px;
   border-radius: 0 30px 30px 0px;
-  transform: translate3d(115px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(130px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
 .slider-bg.left {
-  transform: translate3d(5px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
 .text-left {
@@ -46,4 +53,8 @@
 .text-right {
   @extend %slider-text;
   text-align: end;
+}
+
+.text-active {
+  color: $primary-color;
 }
