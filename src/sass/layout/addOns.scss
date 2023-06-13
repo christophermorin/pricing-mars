@@ -1,11 +1,12 @@
-.addOns-container {
+.addOn-cards-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(320px, 340px));
   gap: 20px;
   overflow-x: scroll;
   padding: 20px 0 40px 0;
+  margin-top: 20px;
 
-  @media (min-width: 1020px) {
+  @media (min-width: 1060px) {
     justify-content: space-between;
     padding: 40px 0 80px 0;
     overflow-x: unset;

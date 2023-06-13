@@ -1,4 +1,10 @@
+@use '../themes/' as *;
+
 // Typography
 $text-primary: #000;
 $link-primary: grey;
 $link-hover: red;
+
+
+// create reusable variables that you will replace fontcolors, backgrounds, box shadows across all scss files here. 
+$bg-color: var(--primary-text);

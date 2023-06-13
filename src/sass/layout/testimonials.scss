@@ -1,8 +1,7 @@
-// Can create this seperate for both addons and testimonials
 .overflow {
   overflow-x: scroll;
 
-  @media (min-width: "730px") {
+  @media (min-width: 1160px) {
     overflow-x: unset
   }
 }
@@ -12,11 +11,17 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  margin-top: 40px;
+  padding-bottom: 20px;
 
   @media (min-width: 730px) {
     justify-content: center;
     align-items: center;
   }
+}
+
+.testimonial-header {
+  text-align: center;
 }
 
 .quotes-row {

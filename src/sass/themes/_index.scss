@@ -1,0 +1,11 @@
+:root {
+  --primary-text: rgba(255, 0, 0, 1);
+  --secondary-text: blue;
+  //define your colors for text, backgrounds, boxshadows etc here
+}
+
+.theme-dark {
+  --primary-text: green;
+  --secondary-text: purple;
+  //define your dark colors for text, backgrounds, boxshadows etc here
+}
