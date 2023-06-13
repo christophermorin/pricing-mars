@@ -10,9 +10,13 @@ export default function Card({ data }: Props) {
       <div className={`${data.id === 1 ? 'card-outline' : ''}`}></div>
       <div className="card-top">
         <h2 className="text-2">{data.title}</h2>
-        <p className="mt-20">${data.price}</p><span> /month</span>
-        <button data-testid="card_button_top" className="btn-card mt-10">Breathe Valor</button>
-        <p className="mt-20">{data.description}</p>
+        <div className="card-price mt-20">
+
+          <p className="text-3">${data.price}</p>
+          <p className="">/month</p>
+        </div>
+        <button data-testid="card_button_top" className="btn-card mt-10">Join Us!</button>
+        <p className="mt-20" style={{ textAlign: "center" }}>{data.description}</p>
       </div>
       <section>
         <ul className="card-ul">
@@ -23,7 +27,7 @@ export default function Card({ data }: Props) {
           })}
         </ul>
       </section>
-      <button data-testid="card_button_bottom" className="btn-card mt-10">Breathe Valor</button>
+      <button data-testid="card_button_bottom" className="btn-card mt-10">Buy Today!</button>
     </div >
   )
 }

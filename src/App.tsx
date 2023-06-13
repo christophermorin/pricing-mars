@@ -28,7 +28,7 @@ function App() {
       <Faq />
       <Testimonials />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

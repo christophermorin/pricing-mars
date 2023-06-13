@@ -21,24 +21,24 @@ export const cardVoid: CardType = {
 const cardData: CardType[] = [
   {
     id: 0,
-    title: "Pebbles",
-    price: "17",
-    description: "Consectetur Eiusmod Adipiscing",
-    items: ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur", "Adipiscing", "Elit", "Sed", "Eiusmod"]
+    title: "Arsia",
+    price: "7",
+    description: "Enjoy the simple life with these compact and easy to maintain habitats. Less can go wrong!",
+    items: ["Solar panels", "Redundant air supply", "Access to colony bandwidth", "Potatoe seeds", "BYO Fertilizer", "Emergency Beacon", "Two emergency escape suits!", "Free bi-monthly scheduled maintenence!"]
   },
   {
     id: 1,
-    title: "Mountain",
-    price: "17",
-    description: "Ut, Nostrud Exercitation",
-    items: ["Ut", "Enim", "Ad", "Minim", "Veniam", "Quis", "Nostrud", "Exercitation", "Ullamco", "Laboris"]
+    title: "Olympus",
+    price: "42",
+    description: "Live your best life in these multi storied Martian villas. Don't mind the wind!",
+    items: ["One kitten", "Colonial power grid", "Timed H20 showers", "Up to three levels!", "Self repairing structure! (Untested)", "Quick launch escape pods!", "Condiments", "On call maintenence!"]
   },
   {
     id: 2,
-    title: "Boulder",
-    price: "17",
-    description: "Aliquip, Commodo Cupidatat",
-    items: ["Aliquip", "Commodo", "Cupidatat", "Non", "Proident", "Sunt", "In", "Culpa", "Qui", "Officia"]
+    title: "Pavonis",
+    price: "11",
+    description: "These mid tier options bring relative comfort and safety, all in one!",
+    items: ["Heated floors", "Personal wind farm", "EM Shelters a short walk away!", "Reliable communications!", "Cryofreeze laundry!", "Local site seeing", "Corn", "Exciting!"]
   }
 ]
 

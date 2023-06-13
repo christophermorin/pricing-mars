@@ -2,3 +2,27 @@
   margin: $mt-auto auto;
   margin-bottom: 0;
 }
+
+@mixin underline-hover {
+  position: relative;
+  padding: 5px 0;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: $primary-color;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    height: 2px;
+    width: 100%;
+  }
+}

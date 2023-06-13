@@ -144,11 +144,11 @@ table {
 *****************************************************
 */
 :root {
-  --default-color: #000;
+  --default-color: #fff;
   --primary-color: #3FD2C7;
   --secondary-color: rgba(173, 216, 230, 1);
   --text-primary: #00458B;
-  --text-primary-hover: red;
+  --text-primary-hover: rgba(250, 39, 66, 1);
 }
 
 .theme-dark {
@@ -443,7 +443,7 @@ li {
   width: 80%;
   border-radius: 25px;
   height: 25%;
-  background: grey;
+  background: rgb(173, 216, 230);
 }
 
 .inner-large {
@@ -655,24 +655,21 @@ li {
   font-weight: 700;
   border-radius: 20px;
   background: var(--primary-color);
-  color: var(--default-color);
+  color: var(--text-primary);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 .btn-card:hover, .btn-secondary:hover, .btn-primary:hover {
   background: var(--text-primary);
   color: var(--default-color);
-  filter: drop-shadow(1px 1px 5px var(--primary-color));
 }
 
 .btn-secondary {
   background: inherit;
-  border: none;
   color: var(--text-primary);
 }
 .btn-secondary:hover {
   color: var(--text-primary);
-  background: none;
 }
 
 .btn-card {
@@ -684,12 +681,36 @@ li {
   border: none;
 }
 
-.text-right, .text-left {
+.nav-buttons {
+  position: relative;
+  padding: 5px 0;
+  margin-left: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.nav-buttons:before, .nav-buttons:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+.nav-buttons:hover::before, .nav-buttons:hover::after {
+  height: 2px;
+  width: 100%;
+}
+
+.slider-text {
   flex: 1;
   position: relative;
   color: var(--text-primary);
   transition: all 0.3s;
   font-weight: 700;
+  text-align: center;
 }
 
 .btn-slider {
@@ -709,7 +730,7 @@ li {
 .slider-bg {
   position: absolute;
   left: 0;
-  width: 110px;
+  width: 120px;
   height: 40px;
   padding: 6px 0;
   border-radius: 30px 0 0 30px;
@@ -720,17 +741,12 @@ li {
 }
 
 .slider-bg.right {
-  width: 110px;
   border-radius: 0 30px 30px 0px;
-  transform: translate3d(130px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(120px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
 .slider-bg.left {
   transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-}
-
-.text-right {
-  text-align: end;
 }
 
 .text-active {
@@ -753,6 +769,16 @@ li {
   flex-direction: column;
   align-items: center;
   padding: 30px 30px 0 30px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test {
+  color: var(--text-primary-hover);
 }
 
 .mt-10 {
@@ -784,7 +810,7 @@ li {
 
 .card-outline {
   position: absolute;
-  background: #FA2742;
+  background: var(--primary-color);
   width: 104%;
   height: 104%;
   top: -3%;

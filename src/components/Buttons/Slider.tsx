@@ -9,11 +9,12 @@ export default function Slider({ handleSlider, sliderSelect }: Props) {
       <div
         data-testid="slider"
         className={`slider-bg ${sliderSelect ? 'right' : 'left'}`}>
+        {/* <p style={{ textAlign: "center", color: "red" }}>{sliderSelect ? "Yearly" : "Monthly"}</p> */}
       </div>
-      <div className={`text-left ${sliderSelect ? '' : 'text-active'}`} >
+      <div className={`slider-text ${sliderSelect ? '' : 'text-active'}`} >
         Monthly
       </div>
-      <div className={`text-right ${sliderSelect ? 'text-active' : ''}`}>
+      <div className={`slider-text ${sliderSelect ? 'text-active' : ''}`}>
         Yearly
       </div>
     </div>

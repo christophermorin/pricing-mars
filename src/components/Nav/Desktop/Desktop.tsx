@@ -1,3 +1,5 @@
+import PrimaryButton from "../../Buttons/PrimaryButton"
+
 interface Props {
   handleActive: (idx: number | null) => void
 }
@@ -19,12 +21,8 @@ export default function Desktop({ handleActive }: Props) {
           </ul>
         </nav>
         <div className="desktop-auth">
-          <div className="btn-secondary">
-            Login
-          </div>
-          <div className="btn-primary">
-            Sign Up
-          </div>
+          <PrimaryButton text={"Login"} />
+          <PrimaryButton text={"Sign Up"} />
         </div>
       </div>
     </div>

@@ -12,11 +12,11 @@ export default function ChatBox() {
       </div>
       <div className="chatbubble-2 chatbubble-container">
         <img src="/filler.svg" />
-        <p>Lorem ipsum dolor ipsum dol sdfssfsf!</p>
+        <p>Hi, I need maintanence on a pod bay door.</p>
       </div>
       <div className="chatbubble-3 chatbubble-container">
         <img src="/filler.svg" />
-        <p>Lorem ipsum dolor?</p>
+        <p>Hello, Dave.</p>
       </div>
     </div>
   )

@@ -4,7 +4,7 @@ export default function Testimonials() {
   return (
     <div style={{ paddingBottom: "120px" }}>
       <div className="container-medium">
-        <h2 className="text-2 testimonial-header">Words from our users...</h2>
+        <h2 className="text-2 testimonial-header">Words from our survivors!</h2>
         <div style={{ display: "flex", justifyContent: "center", gap: "20px", marginTop: "30px" }}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <img src="/fivestars.png" />
@@ -20,7 +20,7 @@ export default function Testimonials() {
         <div className="overflow">
           <section className="testimonial-container">
             <div className="quotes-row">
-              <QuoteBox text={"Adjsks"} />
+              <QuoteBox text={"Kitty!"} />
               <QuoteBox text={"Adjsks aa asdadd aas"} />
               <QuoteBox text={"Adjsks asdadddas"} />
               <QuoteBox text={"Adjsks asda ass"} />

@@ -1,11 +1,12 @@
 @use '../utils/variables' as *;
 
-%slider-text {
+.slider-text {
   flex: 1;
   position: relative;
   color: $text-primary;
   transition: all 0.3s;
   font-weight: 700;
+  text-align: center;
 }
 
 .btn-slider {
@@ -26,7 +27,7 @@
 .slider-bg {
   position: absolute;
   left: 0;
-  width: 110px;
+  width: 120px;
   height: 40px;
   padding: 6px 0;
   border-radius: 30px 0 0 30px;
@@ -37,22 +38,13 @@
 }
 
 .slider-bg.right {
-  width: 110px;
+  // width: 110px;
   border-radius: 0 30px 30px 0px;
-  transform: translate3d(130px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(120px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
 .slider-bg.left {
   transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-}
-
-.text-left {
-  @extend %slider-text;
-}
-
-.text-right {
-  @extend %slider-text;
-  text-align: end;
 }
 
 .text-active {
