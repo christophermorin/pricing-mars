@@ -1,7 +1,7 @@
 export default function QuoteBox({ text }: { text: string }) {
   return (
     <div className="quote-box">
-      <p>
+      <p className="">
         ”
         {text}
         “

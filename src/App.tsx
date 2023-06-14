@@ -1,5 +1,5 @@
 import Nav from './components/Nav/Nav'
-import Main from './components/Hero/Hero'
+import Hero from './components/Hero/Hero'
 import AddOns from './components/AddOns/AddsOns'
 import Faq from './components/Faq/Faq'
 import Testimonials from './components/Testimonials/Testimonials'
@@ -23,12 +23,12 @@ function App() {
   return (
     <div>
       <Nav navBreakPoint={navBreakPoint} />
-      <Main voidBreakPoint={voidBreakPoint} />
+      <Hero voidBreakPoint={voidBreakPoint} />
       <AddOns />
       <Faq />
       <Testimonials />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

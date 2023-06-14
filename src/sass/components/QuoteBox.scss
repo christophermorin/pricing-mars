@@ -1,12 +1,18 @@
+@use '../utils/variables' as *;
+
 .quote-box {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  // max-width: 150px;
   width: auto;
   padding: 15px 10px;
   flex: none;
-  background: darkgrey;
+  box-shadow: 0 1px 10px 1px rgba(173, 216, 230, 1);
+  // background: rgba(173, 216, 230, 1);
+  font-weight: 700;
+  border: 2px solid $primary-color;
 
 
   @media(min-width: 730px) {

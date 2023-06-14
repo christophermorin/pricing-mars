@@ -8,7 +8,7 @@ export default function AddOnCard({ card }: { card: addOnsType }) {
         <p className="mt-20">{card.content}</p>
       </section>
       <section>
-        <p className="addOn-end">{card.price}</p>
+        <p className="addOn-end text-2">{typeof card.price === 'number' ? `$${card.price}` : card.price}</p>
       </section>
     </div>
   )

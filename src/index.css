@@ -416,128 +416,6 @@ li {
   }
 }
 
-.chatbox-container {
-  width: 320px;
-  height: 300px;
-  z-index: 1;
-  position: relative;
-  border-radius: 25px;
-  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 730px) {
-  .chatbox-container {
-    width: 340px;
-    height: 350px;
-  }
-}
-
-.chatbox {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-.chatbox-inner {
-  width: 80%;
-  border-radius: 25px;
-  height: 25%;
-  background: rgb(173, 216, 230);
-}
-
-.inner-large {
-  height: 35%;
-}
-
-.chatbubble-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 20px;
-  position: absolute;
-  background: white;
-  border-radius: 25px;
-  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-}
-.chatbubble-container img {
-  margin-right: 10px;
-}
-
-.chatbubble-1 {
-  width: 150px;
-  height: 60px;
-  top: 10px;
-  left: 10px;
-}
-@media (min-width: 730px) {
-  .chatbubble-1 {
-    width: 200px;
-    height: 80px;
-  }
-}
-
-.chatbubble-2 {
-  width: 210px;
-  height: 80px;
-  bottom: 0;
-  left: 80px;
-}
-@media (min-width: 730px) {
-  .chatbubble-2 {
-    width: 320px;
-    height: 100px;
-    bottom: 0;
-    left: 60px;
-  }
-}
-
-.chatbubble-3 {
-  width: 210px;
-  height: 80px;
-  bottom: 95px;
-  left: 80px;
-}
-@media (min-width: 730px) {
-  .chatbubble-3 {
-    width: 320px;
-    height: 100px;
-    bottom: 115px;
-    left: 60px;
-  }
-}
-
-.contact-card-container {
-  width: 100%;
-  padding: 0 20px;
-}
-
-.contact-card {
-  margin-top: 20px;
-  width: 80%;
-}
-.contact-card p {
-  margin: 20px 0;
-}
-
-.divider {
-  border: 1px solid grey;
-  padding: 0 20px;
-}
-
-.banner-container {
-  margin-top: 120px;
-  background: lightblue;
-}
-
-.banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 120px;
-}
-
 .desktop-nav ul {
   display: flex;
   gap: 25px;
@@ -824,13 +702,14 @@ li {
   flex-direction: column;
   justify-content: space-between;
   height: 240px;
-  border: 0.5px solid lightgrey;
+  border: 0.5px solid var(--primary-color);
   border-radius: 25px;
   padding: 40px;
 }
 
 .addOn-end {
   text-align: end;
+  font-weight: 700;
 }
 
 .faq-accordians-section {
@@ -894,12 +773,179 @@ li {
   width: auto;
   padding: 15px 10px;
   flex: none;
-  background: darkgrey;
+  box-shadow: 0 1px 10px 1px rgb(173, 216, 230);
+  font-weight: 700;
+  border: 2px solid var(--primary-color);
 }
 @media (min-width: 730px) {
   .quote-box {
     padding: 20px 15px;
   }
+}
+
+.chatbox-container {
+  width: 320px;
+  height: 300px;
+  z-index: 1;
+  position: relative;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 730px) {
+  .chatbox-container {
+    width: 340px;
+    height: 350px;
+  }
+}
+
+.chatbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatbox-inner {
+  width: 80%;
+  border-radius: 25px;
+  height: 25%;
+  background: rgb(173, 216, 230);
+}
+
+.inner-large {
+  height: 35%;
+}
+
+.chatbubble-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px 7px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+.chatbubble-container img {
+  margin-right: 10px;
+}
+
+.chatbubble-1 {
+  width: 150px;
+  height: 60px;
+  top: 10px;
+  left: 10px;
+}
+@media (min-width: 730px) {
+  .chatbubble-1 {
+    width: 200px;
+    height: 80px;
+  }
+}
+
+.chatbubble-2 {
+  width: 210px;
+  height: 80px;
+  bottom: 0;
+  left: 80px;
+}
+@media (min-width: 730px) {
+  .chatbubble-2 {
+    width: 320px;
+    height: 100px;
+    bottom: 0;
+    left: 60px;
+  }
+}
+
+.chatbubble-3 {
+  width: 210px;
+  height: 80px;
+  bottom: 95px;
+  left: 80px;
+}
+@media (min-width: 730px) {
+  .chatbubble-3 {
+    width: 320px;
+    height: 100px;
+    bottom: 115px;
+    left: 60px;
+  }
+}
+
+.contact-card-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact-card {
+  margin-top: 20px;
+  width: 80%;
+}
+.contact-card p {
+  margin: 20px 0;
+}
+
+.divider {
+  border: 1px solid grey;
+  padding: 0 20px;
+}
+
+.banner-container {
+  margin-top: 120px;
+  background: lightblue;
+}
+
+.banner {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+@media (min-width: 730px) {
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 120px;
+  }
+}
+
+.banner-btn {
+  width: 150px;
+  padding: 20px 40px;
+}
+@media (min-width: 730px) {
+  .banner-btn {
+    width: 150px;
+  }
+}
+
+.footer-cols {
+  display: grid;
+  justify-items: center;
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  border-bottom: 1px solid grey;
+}
+.footer-cols ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+@media (min-width: 730px) {
+  .footer-cols ul {
+    margin-top: 0;
+  }
+}
+.footer-cols p {
+  font-weight: 700;
 }
 
 /*CodePen Home Hamburger Dropdown Menu (Pure CSS) 

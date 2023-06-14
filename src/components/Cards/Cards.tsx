@@ -25,9 +25,11 @@ export default function Card({ data }: Props) {
               <li key={item} className="card-features"><img src="checkmark.svg" />{item}</li>
             )
           })}
+          <li>
+            <button data-testid="card_button_bottom" className="btn-card mt-10">Join Us!</button>
+          </li>
         </ul>
       </section>
-      <button data-testid="card_button_bottom" className="btn-card mt-10">Buy Today!</button>
     </div >
   )
 }

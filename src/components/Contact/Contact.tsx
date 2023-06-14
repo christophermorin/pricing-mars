@@ -1,3 +1,4 @@
+import { contactData } from "../../db/contactData"
 import ContactCard from "./ContactCard"
 import ChatBox from "./ChatBox"
 
@@ -8,15 +9,17 @@ export default function Contact() {
         <section className="contact-container">
           <ChatBox />
           <div className="contact-card-container">
-            <ContactCard />
-            <div className="divider"></div>
-            <ContactCard />
+            {contactData.map(card => {
+              return (
+                <ContactCard key={card.id} card={card} />
+              )
+            })}
           </div>
         </section>
         <section className="banner-container">
           <div className="banner">
             <h2 className="text-2 w-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, magnam!</h2>
-            <div className="btn-primary w-2" style={{ padding: "20px 40px" }}>Whats this</div>
+            <div className="btn-primary banner-btn">Whats this</div>
           </div>
         </section>
       </div >

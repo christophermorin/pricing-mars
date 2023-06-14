@@ -4,7 +4,7 @@ import Card from "../Cards/Cards"
 import cardData from "../../db/cardData"
 import { cardVoid } from "../../db/cardData"
 
-export default function Main({ voidBreakPoint }: { voidBreakPoint: boolean }) {
+export default function Hero({ voidBreakPoint }: { voidBreakPoint: boolean }) {
   const [sliderSelect, setSliderSelect] = useState<boolean>(false)
 
   const handleSlider = () => {

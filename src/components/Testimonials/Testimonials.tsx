@@ -1,3 +1,5 @@
+import { quoteData } from "../../db/quoteData"
+
 import QuoteBox from "./QuoteBox"
 
 export default function Testimonials() {
@@ -20,6 +22,27 @@ export default function Testimonials() {
         <div className="overflow">
           <section className="testimonial-container">
             <div className="quotes-row">
+              {quoteData.row1.map(content => {
+                return (
+                  <QuoteBox text={content} />
+                )
+              })}
+            </div>
+            <div className="quotes-row">
+              {quoteData.row2.map(content => {
+                return (
+                  <QuoteBox text={content} />
+                )
+              })}
+            </div>
+            <div className="quotes-row">
+              {quoteData.row3.map(content => {
+                return (
+                  <QuoteBox text={content} />
+                )
+              })}
+            </div>
+            {/* <div className="quotes-row">
               <QuoteBox text={"Kitty!"} />
               <QuoteBox text={"Adjsks aa asdadd aas"} />
               <QuoteBox text={"Adjsks asdadddas"} />
@@ -31,7 +54,6 @@ export default function Testimonials() {
               <QuoteBox text={"Adjs sdfafa ad"} />
               <QuoteBox text={"Ada asdfa  aasdd adf"} />
               <QuoteBox text={"Ada asdfa  aasdd adf"} />
-
             </div>
             <div className="quotes-row">
               <QuoteBox text={"Addfff adfa a d"} />
@@ -40,8 +62,7 @@ export default function Testimonials() {
               <QuoteBox text={"Ad sdfass"} />
               <QuoteBox text={"Ad sdfass"} />
               <QuoteBox text={"Ad sdfass"} />
-
-            </div>
+            </div> */}
           </section>
         </div>
       </div >

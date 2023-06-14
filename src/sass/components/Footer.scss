@@ -1,0 +1,23 @@
+.footer-cols {
+  display: grid;
+  justify-items: center;
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  border-bottom: 1px solid grey;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+
+    @media (min-width: 730px) {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    font-weight: 700;
+  }
+}

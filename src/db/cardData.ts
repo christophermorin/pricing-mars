@@ -24,21 +24,21 @@ const cardData: CardType[] = [
     title: "Arsia",
     price: "7",
     description: "Enjoy the simple life with these compact and easy to maintain habitats. Less can go wrong!",
-    items: ["Solar panels", "Redundant air supply", "Access to colony bandwidth", "Potatoe seeds", "BYO Fertilizer", "Emergency Beacon", "Two emergency escape suits!", "Free bi-monthly scheduled maintenence!"]
+    items: ["Solar panels", "Redundant Life Support System", "High-Speed Colony Bandwidth Access", "Potatoe seeds", "Customizable Fertilization System (BYO)", "Emergency Beacon System", "Dual Emergency Escape Suits"]
   },
   {
     id: 1,
     title: "Olympus",
     price: "42",
     description: "Live your best life in these multi storied Martian villas. Don't mind the wind!",
-    items: ["One kitten", "Colonial power grid", "Timed H20 showers", "Up to three levels!", "Self repairing structure! (Untested)", "Quick launch escape pods!", "Condiments", "On call maintenence!"]
+    items: ["One kitten", "Integrated Colonial Power Grid", "Timed H20 showers", "Multi-Level Design Options", "Self repairing structure! (Untested)", "Rapid Deployment Escape Pods", "Complimentary Condiments",]
   },
   {
     id: 2,
     title: "Pavonis",
     price: "11",
     description: "These mid tier options bring relative comfort and safety, all in one!",
-    items: ["Heated floors", "Personal wind farm", "EM Shelters a short walk away!", "Reliable communications!", "Cryofreeze laundry!", "Local site seeing", "Corn", "Exciting!"]
+    items: ["Comfort-Enhancing Heated Floors", "Personal wind farm", "EM Shelters a short walk away!", "Robust and Reliable Communications", "Cutting-Edge Cryofreeze Laundry Service", "Local site seeing", "Corn",]
   }
 ]
 
