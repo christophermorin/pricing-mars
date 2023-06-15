@@ -1,9 +1,17 @@
+@use '../utils/variables' as *;
+
 .footer-cols {
   display: grid;
-  justify-items: center;
   height: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   border-bottom: 1px solid grey;
+  gap: 40px;
+  padding-bottom: 40px;
+  padding-top: 120px;
+
+  @media (min-width: 730px) {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+  }
 
   ul {
     display: flex;
@@ -13,7 +21,15 @@
     align-items: center;
 
     @media (min-width: 730px) {
+      align-items: flex-start;
       margin-top: 0;
+    }
+
+    li {
+      &:hover {
+        color: $primary-color;
+        cursor: pointer;
+      }
     }
   }
 

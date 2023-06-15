@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .faq-h2 {
   margin-bottom: 60px;
   text-align: center;
@@ -9,11 +11,12 @@
 
 .faq-img {
   display: none;
+  color: $primary-color;
 
   @media (min-width: 730px) {
     display: block;
     position: absolute;
     right: 0;
-    top: -150px
+    top: -90px
   }
 }

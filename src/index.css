@@ -358,13 +358,14 @@ li {
 
 .faq-img {
   display: none;
+  color: var(--primary-color);
 }
 @media (min-width: 730px) {
   .faq-img {
     display: block;
     position: absolute;
     right: 0;
-    top: -150px;
+    top: -90px;
   }
 }
 
@@ -753,6 +754,7 @@ li {
   justify-content: space-between;
   list-style: none;
   padding-bottom: 10px;
+  line-height: 20px;
 }
 
 .faq-chevron {
@@ -927,10 +929,17 @@ li {
 
 .footer-cols {
   display: grid;
-  justify-items: center;
   height: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   border-bottom: 1px solid grey;
+  gap: 40px;
+  padding-bottom: 40px;
+  padding-top: 120px;
+}
+@media (min-width: 730px) {
+  .footer-cols {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+  }
 }
 .footer-cols ul {
   display: flex;
@@ -941,11 +950,43 @@ li {
 }
 @media (min-width: 730px) {
   .footer-cols ul {
+    align-items: flex-start;
     margin-top: 0;
   }
 }
+.footer-cols ul li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
 .footer-cols p {
   font-weight: 700;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 730px) {
+  .socials {
+    flex-direction: row;
+  }
+}
+
+.socials-icons {
+  margin-right: 20px;
+}
+
+.socials-corp {
+  display: flex;
+  align-items: center;
+}
+
+.socials-fineprint {
+  margin-top: 20px;
+  font-size: 10px;
 }
 
 /*CodePen Home Hamburger Dropdown Menu (Pure CSS) 

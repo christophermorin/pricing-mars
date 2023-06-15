@@ -1,5 +1,4 @@
 import { contactDataType } from "../../db/contactData"
-import PrimaryButton from "../Buttons/PrimaryButton"
 
 export default function ContactCard({ card }: { card: contactDataType }) {
   return (
