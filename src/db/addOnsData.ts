@@ -21,6 +21,6 @@ export const addsOnsData: addOnsType[] = [
     heading: "Safety!",
     content:
       "Enjoy peace of mind with our money back guaranteed add-on safety features!* ",
-    price: 42,
+    price: 96,
   },
 ];
