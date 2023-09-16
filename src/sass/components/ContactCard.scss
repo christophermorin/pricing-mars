@@ -6,10 +6,15 @@
 .contact-card {
   margin-top: 20px;
   width: 80%;
+  // line-height: 20px;
 
   p {
     margin: 20px 0;
   }
+}
+
+.contact-card-content {
+  line-height: 20px;
 }
 
 .divider {

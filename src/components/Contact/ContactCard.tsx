@@ -5,7 +5,7 @@ export default function ContactCard({ card }: { card: contactDataType }) {
     <div style={{ padding: "20px" }}>
       <div className="contact-card">
         <h2 className="text-2">{card.header}</h2>
-        <p>{card.content}</p>
+        <p className="contact-card-content">{card.content}</p>
         {card.type === "contact" ? <p className="nav-buttons">Contact Us</p> : <p className="btn-card">Join Us!</p>}
       </div>
       <div className="divider"></div>

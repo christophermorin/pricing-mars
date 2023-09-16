@@ -10,12 +10,12 @@ export default function Card({ data }: Props) {
       <div className={`${data.id === 1 ? 'card-outline' : ''}`}></div>
       <div className="card-top">
         <h2 className="text-2">{data.title}</h2>
-        <div className="card-price mt-20">
+        <div className="card-price">
           <p className="text-3">${data.price}</p>
           <p className="">/month</p>
         </div>
-        <button data-testid="card_button_top" className="btn-card mt-10">Join Us!</button>
-        <p className="mt-20 card-description">{data.description}</p>
+        <button data-testid="card_button_top" className="btn-card ">Join Us!</button>
+        <p className="card-description">{data.description}</p>
       </div>
       <section>
         <ul className="card-ul">
@@ -24,7 +24,7 @@ export default function Card({ data }: Props) {
               <li key={item} className="card-features"><img src="checkmark.svg" />{item}</li>
             )
           })}
-          <li>
+          <li className="card-btn-bottom">
             <button data-testid="card_button_bottom" className="btn-card mt-10">Join Us!</button>
           </li>
         </ul>

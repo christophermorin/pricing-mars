@@ -38,11 +38,11 @@ const cardData: CardType[] = [
     description:
       "Live your best life in these multi storied Martian villas. Don't mind the wind!",
     items: [
-      "One kitten",
       "Integrated Colonial Power Grid",
       "Timed H20 showers",
       "Multi-Level Design Options",
       "Self repairing structure! (Untested)",
+      "One kitten",
       "Rapid Deployment Escape Pods",
       "Complimentary Condiments",
     ],
