@@ -9,48 +9,47 @@ export const navData: navDataType[] = [
   {
     id: 1,
     catagory: "Products",
-    headers: ["Client Management", "Project Managment", "Financial Management", "Whats New"],
+    headers: ["Habitat Management", "Supplies Managment", "Comunications", "Financial Management"],
     items: [
-      ["CRM",
-        "Scheduling",
-        "Proposals",
-        "Contacts",
-        "Forms",
+      ["Habitat Pods",
+        "Energy Production",
+        "Rover Drones",
       ],
-      ["Time Tracking",
-        "Tasks",
-        "File Sharing",
-        "Client portal",
-        "Collaboration",
+      ["Survival Kits",
+        "Food Rations",
+        "Terraforming Seeds",
       ],
       [
-        "Invoicing",
-        "Payments",
-        "Accouting",
-        "Taxes",
-        "Banking",
+        "Communication Devices",
+        "Client portal",
+        "Souvenirs",
       ],
-      [""]
+      ["Taxes"]
     ]
   },
   {
     id: 2,
     catagory: "Services",
-    headers: ["Business Services",
-      "Creative and Digital",
-      "Professional Services",
+    headers: ["Construction",
+      "Farming",
+      "Health & Wellness",
       "Other services"],
     items: [
       [
-        "11", "22", "33"
+        "Habitat Construction",
+        "Maintenance",
+        "Mission Planning",
       ],
       [
-        "4", "5", "6"
+        "Environmental Consulting",
+        "Agriculture",
+        "Water Filtration",
       ],
       [
-        "7", "8", "9"
+        "Medical Services",
+        "Tourism Packages",
       ],
-      [""]
+      ["Referals"]
     ]
   }
 ]

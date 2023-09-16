@@ -11,12 +11,11 @@ export default function Card({ data }: Props) {
       <div className="card-top">
         <h2 className="text-2">{data.title}</h2>
         <div className="card-price mt-20">
-
           <p className="text-3">${data.price}</p>
           <p className="">/month</p>
         </div>
         <button data-testid="card_button_top" className="btn-card mt-10">Join Us!</button>
-        <p className="mt-20" style={{ textAlign: "center" }}>{data.description}</p>
+        <p className="mt-20 card-description">{data.description}</p>
       </div>
       <section>
         <ul className="card-ul">

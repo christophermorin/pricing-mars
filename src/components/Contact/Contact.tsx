@@ -18,7 +18,7 @@ export default function Contact() {
         </section>
         <section className="banner-container">
           <div className="banner">
-            <h2 className="text-2 w-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, magnam!</h2>
+            <h2 className="text-2 w-7">Enticing banner to convince you. Be convinced!</h2>
             <div className="btn-primary banner-btn">Whats this</div>
           </div>
         </section>

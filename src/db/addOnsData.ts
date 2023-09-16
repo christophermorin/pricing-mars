@@ -1,24 +1,26 @@
 export interface addOnsType {
-  heading: string,
-  content: string,
-  price: number | string,
+  heading: string;
+  content: string;
+  price: number | string;
 }
 
 export const addsOnsData: addOnsType[] = [
   {
     heading: "Refer a friend!",
-    content: "Convince someone, anyone, to get on board and earn a free seed crop of choice upon arrival!",
-    price: "Free!"
+    content:
+      "Convince someone, anyone, to get on board and earn a free seed crop of choice upon arrival!",
+    price: "Free!",
   },
   {
     heading: "Expansion!",
-    content: "Feeling cramped? Stretch out in something like our extended sleeping pods, and many more! Add a modular expansion today!",
+    content:
+      "Feeling cramped? Stretch out into our extended sleeping pods, or install that desk treadmill you've always wanted! Take a stroll! Add a modular expansion today!",
     price: 27,
   },
   {
-    heading: "I don't know yet",
-    content: "It's late and I need to sleep",
-    price: 69,
-  }
-
-]
+    heading: "Safety!",
+    content:
+      "Enjoy peace of mind with our money back guaranteed add-on safety features!* ",
+    price: 42,
+  },
+];
